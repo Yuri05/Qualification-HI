@@ -1,8 +1,5 @@
-# COMPOUND-Model
-**_tbd._**
-
 ## Repository files
-**_tbd._**
+https://github.com/Open-Systems-Pharmacology/Qualification-HI
 
 ## Code of conduct
 Everyone interacting in the Open Systems Pharmacology community (codebases, issue trackers, chat rooms, mailing lists etc...) is expected to follow the Open Systems Pharmacology [code of conduct](https://github.com/Open-Systems-Pharmacology/Suite/blob/master/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct).
@@ -14,4 +11,4 @@ We encourage contribution to the Open Systems Pharmacology community. Before get
 The model code is distributed under the [GPLv2 License](https://github.com/Open-Systems-Pharmacology/Suite/blob/develop/LICENSE).
 
 ## References
-[1] **_tbd._**
+[1] [References](Qualification/Input/Content/References.md)

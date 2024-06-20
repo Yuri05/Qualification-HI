@@ -1,0 +1,11 @@
+re_input*
+re_output*
+.RHistory
+.RData
+
+~$*.doc
+
+
+log-*.txt
+
+*.lock

@@ -1,0 +1,278 @@
+{
+   "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/main/schemas/OSP_Qualification_Plan_Schema.json",
+   "Projects": [
+      {
+         "Id": "Alfentanil",
+         "Path": "Models/Alfentanil.json"
+      },
+      {
+         "Id": "Levetiracetam",
+         "Path": "Models/Levetiracetam.json"
+      },
+      {
+         "Id": "Metoprolol",
+         "Path": "Models/Metoprolol.json"
+      },
+      {
+         "Id": "Midazolam",
+         "Path": "Models/Midazolam.json"
+      },
+      {
+         "Id": "Sildenafil",
+         "Path": "Models/Sildenafil.json"
+      },
+      {
+         "Id": "Theophylline",
+         "Path": "Models/Theophylline.json"
+      },
+      {
+         "Id": "Lidocaine",
+         "Path": "Models/Lidocaine.json"
+      }
+   ],
+   "ObservedDataSets": [],
+   "Plots": {
+      "AxesSettings": {},
+      "PlotSettings": {},
+      "AllPlots": [
+         {
+            "Project": "Alfentanil",
+            "Simulation": "Ferrier1985 Child Pugh B",
+            "SectionReference": "Alfentanil_HI"
+         },
+         {
+            "Project": "Alfentanil",
+            "Simulation": "Ferrier1985 Child Pugh C",
+            "SectionReference": "Alfentanil_HI"
+         },
+         {
+            "Project": "Levetiracetam",
+            "Simulation": "Brockmoller2005_CPA_Population",
+            "SectionReference": "Levetiracetam_HI"
+         },
+         {
+            "Project": "Levetiracetam",
+            "Simulation": "Brockmoller2005_CPB_Population",
+            "SectionReference": "Levetiracetam_HI"
+         },
+         {
+            "Project": "Levetiracetam",
+            "Simulation": "Brockmoller2005_CPC_Population",
+            "SectionReference": "Levetiracetam_HI"
+         },
+         {
+            "Project": "Lidocaine",
+            "Simulation": "Orlando2003_CPA_Population",
+            "SectionReference": "Lidocaine_HI"
+         },
+         {
+            "Project": "Lidocaine",
+            "Simulation": "Orlando2003_CPC_Population",
+            "SectionReference": "Lidocaine_HI"
+         },
+         {
+            "Project": "Metoprolol",
+            "Simulation": "Regardh1981_CPA_PO_Population",
+            "SectionReference": "Metoprolol_HI"
+         },
+         {
+            "Project": "Metoprolol",
+            "Simulation": "Regardh1981_CPB_PO_Population",
+            "SectionReference": "Metoprolol_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Macgilchrist1986_CPA_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Macgilchrist1986_CPB_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Macgilchrist1986_CPC_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Pentikainen1989_IV_CPB_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Pentikainen1989_IV_CPC_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Pentikanen1889_PO_CPB_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Midazolam",
+            "Simulation": "Pentikanen1889_PO_CPC_Population",
+            "SectionReference": "Midazolam_HI"
+         },
+         {
+            "Project": "Sildenafil",
+            "Simulation": "Muirhead2002_CPA_Population",
+            "SectionReference": "Sildenafil_HI"
+         },
+         {
+            "Project": "Sildenafil",
+            "Simulation": "Muirhead2002_CPB_Population",
+            "SectionReference": "Sildenafil_HI"
+         },
+         {
+            "Project": "Theophylline",
+            "Simulation": "Froomes1981_CPB_Population",
+            "SectionReference": "Theophylline_HI"
+         },
+         {
+            "Project": "Theophylline",
+            "Simulation": "Froomes1981_CPC_Population",
+            "SectionReference": "Theophylline_HI"
+         }
+      ]
+   },
+   "Inputs": [],
+   "Sections": [
+      {
+         "Title": "Introduction",
+         "Content": "Content/Section1_Introduction.md"
+      },
+      {
+         "Title": "HI Population Development",
+         "Content": "Content/Section2_Model.md"
+      },
+      {
+         "Title": "Compounds",
+         "Content": "Content/Section3_Results_and_Discussion.md",
+         "Sections": [
+            {
+               "Title": "Alfentanil",
+               "Content": "Content/Alfentanil_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Alfentanil_Healthy",
+                     "Title": "Alfentanil in a Healthy Population",
+                     "Content": "Content/Alfentanil_healthy.md"
+                  },
+                  {
+                     "Reference": "Alfentanil_HI",
+                     "Title": "Alfentanil in a HI Population",
+                     "Content": "Content/Alfentanil_HI.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Levetiracetam",
+               "Content": "Content/Levetiracetam_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Levetiracetam_Healthy",
+                     "Title": "Levetiracetam in a Healthy Population",
+                     "Content": "Content/Levetiracetam_healthy.md"
+                  },
+                  {
+                     "Reference": "Levetiracetam_HI",
+                     "Title": "Levetiracetam in a HI Population",
+                     "Content": "Content/Levetiracetam_HI.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Metoprolol",
+               "Content": "Content/Metoprolol_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Metoprolol_Healthy",
+                     "Title": "Metoprolol in a Healthy Population",
+                     "Content": "Content/Metoprolol_healthy.md"
+                  },
+                  {
+                     "Reference": "Metoprolol_HI",
+                     "Title": "Metoprolol in a HI Population",
+                     "Content": "Content/Metoprolol_HI.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Midazolam",
+               "Content": "Content/Midazolam_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Midazolam_Healthy",
+                     "Title": "Midazolam in a Healthy Population",
+                     "Content": "Content/Midazolam_healthy.md"
+                  },
+                  {
+                     "Reference": "Midazolam_HI",
+                     "Title": "Midazolam in a HI Population",
+                     "Content": "Content/Midazolam_HI.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Sildenafil",
+               "Content": "Content/Sildenafil_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Sildenafil_Healthy",
+                     "Title": "Sildenafil in a Healthy Population",
+                     "Content": "Content/Sildenafil_healthy.md"
+                  },
+                  {
+                     "Reference": "Sildenafil_HI",
+                     "Title": "Sildenafil in a HI Population",
+                     "Content": "Content/Sildenafil_HI.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Theophylline",
+               "Content": "Content/Theophylline_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Theophylline_Healthy",
+                     "Title": "Theophylline in a Healthy Population",
+                     "Content": "Content/Theophylline_healthy.md"
+                  },
+                  {
+                     "Reference": "Theophylline_HI",
+                     "Title": "Theophylline in a HI Population",
+                     "Content": "Content/Theophylline_HI.md"
+                  }
+               ]
+            },
+            {
+               "Title": "Lidocaine",
+               "Content": "Content/Lidocaine_Introduction.md",
+               "Sections": [
+                  {
+                     "Reference": "Lidocaine_Healthy",
+                     "Title": "Lidocaine in a Healthy Population",
+                     "Content": "Content/Lidocaine_healthy.md"
+                  },
+                  {
+                     "Reference": "Lidocaine_HI",
+                     "Title": "Lidocaine in a HI Population",
+                     "Content": "Content/Lidocaine_HI.md"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "Title": "References",
+         "Content": "Content/References.md"
+      }
+   ],
+   "Intro": [
+      {
+         "Path": "Content/titlepage.md"
+      }
+   ]
+}
