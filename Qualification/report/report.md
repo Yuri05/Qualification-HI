@@ -6,10 +6,10 @@
 
 
 
-| Version                                         | 2.0-OSP11.3                                                   |
+| Version                                         | 1.0-OSP12.0                                                   |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| OSP Version                                     | 11.3                                                          |
-| Qualification Framework Version                 | 3.0                                                          |
+| OSP Version                                     | 12.0                                                          |
+| Qualification Framework Version                 | 3.2                                                          |
 
 
 
@@ -21,42 +21,42 @@ https://github.com/Open-Systems-Pharmacology/Qualification-HI
 
 # Table of Contents
 
- * [1 Introduction ](#undefined-section-1)
- * [2 HI Population Development ](#undefined-section-2)
- * [3 Compounds ](#undefined-section-3)
-   * [3.1 Alfentanil ](#undefined-section-4)
-     * [3.1.1 Alfentanil in a Healthy Population ](#alfentanil_healthy)
-     * [3.1.2 Alfentanil in a HI Population ](#alfentanil_hi)
-   * [3.2 Levetiracetam ](#undefined-section-7)
-     * [3.2.1 Levetiracetam in a Healthy Population ](#levetiracetam_healthy)
-     * [3.2.2 Levetiracetam in a HI Population ](#levetiracetam_hi)
-   * [3.3 Metoprolol ](#undefined-section-10)
-     * [3.3.1 Metoprolol in a Healthy Population ](#metoprolol_healthy)
-     * [3.3.2 Metoprolol in a HI Population ](#metoprolol_hi)
-   * [3.4 Midazolam ](#undefined-section-13)
-     * [3.4.1 Midazolam in a Healthy Population ](#midazolam_healthy)
-     * [3.4.2 Midazolam in a HI Population ](#midazolam_hi)
-   * [3.5 Sildenafil ](#undefined-section-16)
-     * [3.5.1 Sildenafil in a Healthy Population ](#sildenafil_healthy)
-     * [3.5.2 Sildenafil in a HI Population ](#sildenafil_hi)
-   * [3.6 Theophylline ](#undefined-section-19)
-     * [3.6.1 Theophylline in a Healthy Population ](#theophylline_healthy)
-     * [3.6.2 Theophylline in a HI Population ](#theophylline_hi)
-   * [3.7 Lidocaine ](#undefined-section-22)
-     * [3.7.1 Lidocaine in a Healthy Population ](#lidocaine_healthy)
-     * [3.7.2 Lidocaine in a HI Population ](#lidocaine_hi)
- * [4 References ](#undefined-section-25)
+ * [1 Introduction](#undefined-section-1)
+ * [2 HI Population Development](#undefined-section-2)
+ * [3 Compounds](#undefined-section-3)
+   * [3.1 Alfentanil](#undefined-section-4)
+     * [3.1.1 Alfentanil in a Healthy Population](#alfentanil_healthy)
+     * [3.1.2 Alfentanil in a HI Population](#alfentanil_hi)
+   * [3.2 Levetiracetam](#undefined-section-7)
+     * [3.2.1 Levetiracetam in a Healthy Population](#levetiracetam_healthy)
+     * [3.2.2 Levetiracetam in a HI Population](#levetiracetam_hi)
+   * [3.3 Metoprolol](#undefined-section-10)
+     * [3.3.1 Metoprolol in a Healthy Population](#metoprolol_healthy)
+     * [3.3.2 Metoprolol in a HI Population](#metoprolol_hi)
+   * [3.4 Midazolam](#undefined-section-13)
+     * [3.4.1 Midazolam in a Healthy Population](#midazolam_healthy)
+     * [3.4.2 Midazolam in a HI Population](#midazolam_hi)
+   * [3.5 Sildenafil](#undefined-section-16)
+     * [3.5.1 Sildenafil in a Healthy Population](#sildenafil_healthy)
+     * [3.5.2 Sildenafil in a HI Population](#sildenafil_hi)
+   * [3.6 Theophylline](#undefined-section-19)
+     * [3.6.1 Theophylline in a Healthy Population](#theophylline_healthy)
+     * [3.6.2 Theophylline in a HI Population](#theophylline_hi)
+   * [3.7 Lidocaine](#undefined-section-22)
+     * [3.7.1 Lidocaine in a Healthy Population](#lidocaine_healthy)
+     * [3.7.2 Lidocaine in a HI Population](#lidocaine_hi)
+ * [4 References](#undefined-section-25)
 
 
 
 
 
-# 1 Introduction <a id="undefined-section-1"></a>
+# 1 Introduction<a id="undefined-section-1"></a>
 
 
 The presented qualification report performs simulations of drug disposition and pharmacokinetics (PK) in subjects with hepatic impairment (HI) to qualify the parameterization of the foundational anatomy and physiology parameters for virtual populations with HI in the Open Systems Pharmacology (OSP) Suite.
 
-The liver is an important biotransformation site that serves key roles in the metabolism and clearance of drugs and toxins. HI is defined by a loss of functional hepatocytes which leads to connective tissue and nodule formation in the liver. The resulting pathophysiology of hepatic impairment is multifactorial; however, several outcomes are apparent. Hepatic impairment is often associated with shunting of blood around the cirrhotic liver which can lead to encephalopathy, decreased drug protein binding, hyperbilirubinemia, and the development of ascites and varices. To describe the disease progression (severity) and estimated prognosis with these factors in consideration, the Child-Pugh score was developed. The Child-Pugh score is designated as A (Mild: 5-6), B (Moderate: 7-9), or C (Severe: =10). It is calculated from summing the scores derived from the [Table 1](#table_1) shown below. 
+The liver is an important biotransformation site that serves key roles in the metabolism and clearance of drugs and toxins. HI is defined by a loss of functional hepatocytes which leads to connective tissue and nodule formation in the liver. The resulting pathophysiology of hepatic impairment is multifactorial; however, several outcomes are apparent. Hepatic impairment is often associated with shunting of blood around the cirrhotic liver which can lead to encephalopathy, decreased drug protein binding, hyperbilirubinemia, and the development of ascites and varices. To describe the disease progression (severity) and estimated prognosis with these factors in consideration, the Child-Pugh score was developed. The Child-Pugh score is designated as A (Mild: 5-6), B (Moderate: 7-9), or C (Severe: ≥10). It is calculated from summing the scores derived from the [Table 1](#table_1) shown below. 
 
 **Table 1. Child-Pugh scoring determined by factors affected by HI** <a id="table_1">
 
@@ -76,7 +76,7 @@ This report build upon the work by Edginton and Willmann (1) and Johnson, Bousse
 
 
 
-# 2 HI Population Development <a id="undefined-section-2"></a>
+# 2 HI Population Development<a id="undefined-section-2"></a>
 
 
 HI population development followed the physiological scaling methods by Edginton and Willmann (1) and Johnson, Boussery (2). The set of modified parameters are presented in the [Table 2](#table_2) below. The values for each Child-Pugh score and parameter are considered "disease factors", which are multiplied by values of a healthy adult to produce the HI state.
@@ -91,7 +91,7 @@ HI population development followed the physiological scaling methods by Edginton
 | Blood flow: Other organs*                     | 1.75             | 2.25             | 2.75             |
 | Cardiac Index                                 | 1.11             | 1.27             | 1.36             |
 | Plasma binding protein: Albumin               | 0.81             | 0.68             | 0.5              |
-| Plasma binding protein: a1-acid-glycoprotein  | 0.6              | 0.56             | 0.3              |
+| Plasma binding protein: α1-acid-glycoprotein  | 0.6              | 0.56             | 0.3              |
 | Hematocrit                                    | 0.92             | 0.88             | 0.83             |
 | Hepatic intrinsic CL: CYP3A4                  | 1                | 0.4              | 0.4              |
 | Hepatic intrinsic CL: CYP1A2                  | 1                | 0.1              | 0.1              |
@@ -112,7 +112,7 @@ Portal, hepatic arterial, and renal blood flows were scaled according to the dis
 
 ## Plasma binding proteins and hematocrit scaling
 
-The fraction unbound in the HI state was determined using methods by Edginton and Willmann (1). The albumin/plasma or a1-acid glycoprotein/plasma partition coefficient of the compound was defined as K_protein. First, K_protein was determined for healthy individuals by rearranging: fu_healthy = 1 / [(1-f_protein_healthy) + (f_protein_healthy)*K_protein]. Where, fu_healthy represents the fraction of unbound drug in a healthy individual, and f_protein_healthy represents the volume fraction of plasma binding protein in healthy (albumin 0.022 and a1-acid glycoprotein 0.0004). Next, fu_diseased was calculated from the aforementioned equation with the calculated K_protein and f_protein_diseased values presented in the [Table 2](#table_2). 
+The fraction unbound in the HI state was determined using methods by Edginton and Willmann (1). The albumin/plasma or α1-acid glycoprotein/plasma partition coefficient of the compound was defined as K_protein. First, K_protein was determined for healthy individuals by rearranging: fu_healthy = 1 / [(1-f_protein_healthy) + (f_protein_healthy)*K_protein]. Where, fu_healthy represents the fraction of unbound drug in a healthy individual, and f_protein_healthy represents the volume fraction of plasma binding protein in healthy (albumin 0.022 and α1-acid glycoprotein 0.0004). Next, fu_diseased was calculated from the aforementioned equation with the calculated K_protein and f_protein_diseased values presented in the [Table 2](#table_2). 
 
 Hematocrit values from Individual > Anatomy & Physiology > Physiology > Tissue and body fluid physiology > Hematocrit, were adjusted to 0.39, 0.37, and 0.35 for Child-Pugh A, B, and C, respectively ([Table 2](#table_2)). 
 
@@ -122,13 +122,13 @@ Reduction in an enzyme’s specific clearance was attributed to decreased fracti
 
 ## Renal intrinsic clearance scaling
 
-The disease factor ([Table 2](#table_2)) was applied to Glomerular filtration (Compound > ADME > Transport & Excretion > Renal Clearances > Glomerular Filtration). 
+The disease factor ([Table 2](#table_2)) was applied to Glomerular filtration (Compound > ADME > Transport & Excretion > Renal Clearances > Glomerular Filtration). 
 
 
 
 
 
-# 3 Compounds <a id="undefined-section-3"></a>
+# 3 Compounds<a id="undefined-section-3"></a>
 
 
 The method to generate virtual populations with HI was qualified by testing its predictive performance when used in combination with PBPK models for healthy subjects in order to predict the PK of drugs in patients with HI from literature.
@@ -141,7 +141,7 @@ Each subsection that follows will contain an introduction to the test compound, 
 
 
 
-## 3.1 Alfentanil <a id="undefined-section-4"></a>
+## 3.1 Alfentanil<a id="undefined-section-4"></a>
 
 
 Alfentanil is a potent, synthetic opioid used to provide analgesia for various surgical procedures and in patients admitted within intensive care units. Alfentanil is typically administered intravenously and offers several advantages to alternative analgesics due to its potency at the opioid receptor and quick onset of effect (3).
@@ -166,7 +166,7 @@ The alfentanil healthy PBPK model is reported in the OSP alfentanil report (4) a
 
 
 
-### 3.1.1 Alfentanil in a Healthy Population <a id="alfentanil_healthy"></a>
+### 3.1.1 Alfentanil in a Healthy Population<a id="alfentanil_healthy"></a>
 
 
 #### IV model
@@ -195,7 +195,7 @@ The healthy PBPK model development was based on single dose IV PK studies descri
 
 
 
-### 3.1.2 Alfentanil in a HI Population <a id="alfentanil_hi"></a>
+### 3.1.2 Alfentanil in a HI Population<a id="alfentanil_hi"></a>
 
 
 #### IV model
@@ -241,7 +241,7 @@ Simulated PK of alfentanil after a single IV bolus dose of 0.05 mg/kg in patient
 
 
 
-## 3.2 Levetiracetam <a id="undefined-section-7"></a>
+## 3.2 Levetiracetam<a id="undefined-section-7"></a>
 
 
 Levetiracetam is an antiepileptic used for the treatment of patients with partial seizures, with or without secondary generalization (22, 23). The mechanism of antiseizure activity has not been fully elucidated, however, animal models have shown that levetiracetam binds to synaptic vesicle proteins SV2A modulating neurotransporter release (24).
@@ -266,7 +266,7 @@ The levetiracetam healthy PBPK model was based on the development by Sinha, Kara
 
 
 
-### 3.2.1 Levetiracetam in a Healthy Population <a id="levetiracetam_healthy"></a>
+### 3.2.1 Levetiracetam in a Healthy Population<a id="levetiracetam_healthy"></a>
 
 
 #### IV/PO model
@@ -300,7 +300,7 @@ T<sub>50%</sub>, T<sub>90%</sub>, T<sub>100%</sub>: Time to dissolve 50%, 90%, a
 
 
 
-### 3.2.2 Levetiracetam in a HI Population <a id="levetiracetam_hi"></a>
+### 3.2.2 Levetiracetam in a HI Population<a id="levetiracetam_hi"></a>
 
 
 #### Oral model
@@ -360,7 +360,7 @@ Simulated PK of levetiracetam administered as a 1000 mg oral single dose in pati
 
 
 
-## 3.3 Metoprolol <a id="undefined-section-10"></a>
+## 3.3 Metoprolol<a id="undefined-section-10"></a>
 
 
 Metoprolol is a cardioselective beta-1-adregenic receptor inhibitor that competitively inhibits beta-1-receptors specific to cardiac cells. It is approved for the treatment of angina, heart failure, myocardial infarction, atrial fibrillation/flutter, and hypertension.
@@ -385,7 +385,7 @@ The metoprolol healthy PBPK model was based on the development by Rüdesheim, Wo
 
 
 
-### 3.3.1 Metoprolol in a Healthy Population <a id="metoprolol_healthy"></a>
+### 3.3.1 Metoprolol in a Healthy Population<a id="metoprolol_healthy"></a>
 
 
 #### IV model
@@ -422,7 +422,7 @@ The healthy PBPK model development was based on multiple oral PK studies describ
 
 
 
-### 3.3.2 Metoprolol in a HI Population <a id="metoprolol_hi"></a>
+### 3.3.2 Metoprolol in a HI Population<a id="metoprolol_hi"></a>
 
 
 #### IV model
@@ -435,22 +435,22 @@ With the drug-specific parameters fixed, the healthy PBPK model was translated t
 |--|--|--|--|--|--|
 | Regårdh, Jordö (35) | 20 mg IV bolus | European female (50%) and male patients with Child-Pugh scores A and B | 10 | 50 ± 8 | 89 ± 16 |
 
-Simulated PK of metoprolol administered as a single 20 mg IV bolus in patients with Child-Pugh A and B presented in **Figure 1** and **Figure 2**, respectively. An evaluation of predicted versus observed AUC<sub>8</sub> from patients enrolled in Regårdh, Jordö (35) is presented in **Table 3**. 
+Simulated PK of metoprolol administered as a single 20 mg IV bolus in patients with Child-Pugh A and B presented in **Figure 1** and **Figure 2**, respectively. An evaluation of predicted versus observed AUC<sub>∞</sub> from patients enrolled in Regårdh, Jordö (35) is presented in **Table 3**. 
 
-**Table 3. Evaluation of metoprolol IV HI-PBPK model-predicted vs observed AUC<sub>8</sub> from Regårdh, Jordö (35)**
+**Table 3. Evaluation of metoprolol IV HI-PBPK model-predicted vs observed AUC<sub>∞</sub> from Regårdh, Jordö (35)**
 
-| **Study** | **Predicted AUC<sub>8</sub> (nmol•h/L)** | **Observed AUC<sub>8</sub> (nmol•h/L)** | **Fold-error** |
+| **Study** | **Predicted AUC<sub>∞</sub> (nmol•h/L)** | **Observed AUC<sub>∞</sub> (nmol•h/L)** | **Fold-error** |
 |--|--|--|--|
 | Regårdh, Jordö (35), Child-Pugh A | 2992.91 | 2606 ± 504 | 1.15 |
 | Regårdh, Jordö (35), Child-Pugh B | 3027.71 | 2606 ± 504 | 1.15 |
 
 #### Oral model
 
-Simulated PK of metoprolol administered as 50 mg oral single dose in patients with Child-Pugh A and B presented in **Figure 3** and **Figure 4**, respectively. An evaluation of predicted versus observed AUC<sub>8</sub> from patients enrolled in Regårdh, Jordö (35) is presented in **Table 4**. 
+Simulated PK of metoprolol administered as 50 mg oral single dose in patients with Child-Pugh A and B presented in **Figure 3** and **Figure 4**, respectively. An evaluation of predicted versus observed AUC<sub>∞</sub> from patients enrolled in Regårdh, Jordö (35) is presented in **Table 4**. 
 
 **Table 4. Evaluation of metoprolol oral HI-PBPK model-predicted vs observed clearance from Regårdh, Jordö (35)**
 
-| **Study** | **Predicted AUC<sub>8</sub> (nmol•h/L)** | **Observed AUC<sub>8</sub> (nmol•h/L)** | **Fold-error** |
+| **Study** | **Predicted AUC<sub>∞</sub> (nmol•h/L)** | **Observed AUC<sub>∞</sub> (nmol•h/L)** | **Fold-error** |
 |--|--|--|--|
 | Regårdh, Jordö (35), Child-Pugh A | 5421.23 | 5347 ± 1236 | 0.99 |
 | Regårdh, Jordö (35), Child-Pugh B | 5955.86 | 5347 ± 1236 | 1.11 |
@@ -485,7 +485,7 @@ Simulated PK of metoprolol administered as 50 mg oral single dose in patients wi
 
 
 
-## 3.4 Midazolam <a id="undefined-section-13"></a>
+## 3.4 Midazolam<a id="undefined-section-13"></a>
 
 
 Midazolam is a benzodiazepine used to induce drowsiness and anxiety relief before surgery and certain procedures. The drug is also indicated for the management of acute seizures. Midazolam acts through increasing the activity of GABA to produce sedative effects.
@@ -510,7 +510,7 @@ The midazolam healthy PBPK model was based on the development by Hanke, Frechen 
 
 
 
-### 3.4.1 Midazolam in a Healthy Population <a id="midazolam_healthy"></a>
+### 3.4.1 Midazolam in a Healthy Population<a id="midazolam_healthy"></a>
 
 
 #### IV/PO model
@@ -546,7 +546,7 @@ The healthy PBPK model development was based on single dose IV and oral PK studi
 
 
 
-### 3.4.2 Midazolam in a HI Population <a id="midazolam_hi"></a>
+### 3.4.2 Midazolam in a HI Population<a id="midazolam_hi"></a>
 
 
 #### IV model
@@ -571,11 +571,11 @@ Simulated PK of midazolam administered as a 0.075 mg/kg IV bolus in patients wit
 | Macgilchrist, Birnie (42), control | 6.3 | 10.4 ± 1.3 | 0.61 | 2.67 | 1.6 ± 0.3 | 1.67 |
 | Macgilchrist, Birnie (42), HI population | Child-Pugh A: 4.85; B: 2.93; C: 1.85 | 5.4 ± 1 | A: 0.89; B: 0.54; C: 0.34 | A: 3.58; B: 5.64; C: 10.5 | 3.9 ± 0.8 | A: 0.92; B: 1.45; C: 2.69 |
 
-Simulated PK of midazolam administered as a 7.5 mg IV bolus in patients with Child-Pugh B and C are presented in **Figure 3** and **Figure 4**, respectively. An evaluation of predicted versus observed AUC<sub>8</sub> and clearance from patients enrolled in Pentikäinen, Välisalmi (43) is presented in **Table 4**. 
+Simulated PK of midazolam administered as a 7.5 mg IV bolus in patients with Child-Pugh B and C are presented in **Figure 3** and **Figure 4**, respectively. An evaluation of predicted versus observed AUC<sub>∞</sub> and clearance from patients enrolled in Pentikäinen, Välisalmi (43) is presented in **Table 4**. 
 
-**Table 4. Evaluation of midazolam IV HI-PBPK model-predicted predicted vs observed AUC<sub>8</sub> and clearance from Pentikäinen, Välisalmi (43)**
+**Table 4. Evaluation of midazolam IV HI-PBPK model-predicted predicted vs observed AUC<sub>∞</sub> and clearance from Pentikäinen, Välisalmi (43)**
 
-| **Study** | **Predicted AUC<sub>8</sub> (µg•h/L)** | **Observed AUC<sub>8</sub> (µg•h/L)** | **Fold-error** | **Predicted clearance (mL/min/kg)** | **Observed clearance (mL/min/kg)** | **Fold-error** |
+| **Study** | **Predicted AUC<sub>∞</sub> (µg•h/L)** | **Observed AUC<sub>∞</sub> (µg•h/L)** | **Fold-error** | **Predicted clearance (mL/min/kg)** | **Observed clearance (mL/min/kg)** | **Fold-error** |
 |--|--|--|--|--|--|--|
 | Pentikäinen, Välisalmi (43), control | 296.61 | 298 ± 25 | 0.99 | 5.81 | 5.63 ± 0.43 | 1.04 |
 | Pentikäinen, Välisalmi (43), HI population | Child-Pugh B: 698.45; C: 1171.57 | 543 ± 93 | B: 1.29; C: 2.16 | B: 2.35; C: 1.54 | 3.34 ± 0.6 | B: 0.7; C: 0.46 |
@@ -591,20 +591,20 @@ Two studies, Pentikäinen, Välisalmi (43) and Andersen, Pedersen (44), were use
 | Pentikäinen, Välisalmi (43) | 15 mg oral single dose 3 days after receiving IV bolus | European male patients with estimated Child-Pugh scores B and C | 7 | 48 ± 13.9 | 85.1 ± 12.2 |
 | Andersen, Pedersen (44) | 15 mg oral single dose | European females (30%) and males with Child-Pugh A-C | A: 6; B: 1; C: 3 | 30-79 | Not reported |
 
-Simulated PK of midazolam administered as a 15 mg oral single dose in patients with Child-Pugh B and C are presented in **Figure 4** and **Figure 5**, respectively. An evaluation of predicted versus observed AUC<sub>8</sub> and Cmax from patients enrolled in Pentikäinen, Välisalmi (43) is presented in **Table 6**. 
+Simulated PK of midazolam administered as a 15 mg oral single dose in patients with Child-Pugh B and C are presented in **Figure 4** and **Figure 5**, respectively. An evaluation of predicted versus observed AUC<sub>∞</sub> and Cmax from patients enrolled in Pentikäinen, Välisalmi (43) is presented in **Table 6**. 
 
-**Table 6. Evaluation of midazolam oral HI-PBPK model-predicted predicted vs observed AUC<sub>8</sub> and Cmax from Pentikäinen, Välisalmi (43)**
+**Table 6. Evaluation of midazolam oral HI-PBPK model-predicted predicted vs observed AUC<sub>∞</sub> and Cmax from Pentikäinen, Välisalmi (43)**
 
-| **Study** | **Predicted AUC<sub>8</sub> (µg•h/L)** | **Observed AUC<sub>8</sub> (µg•h/L)** | **Fold-error** | **Predicted Cmax (µg/L)** | **Observed Cmax (µg/mL)** | **Fold-error** |
+| **Study** | **Predicted AUC<sub>∞</sub> (µg•h/L)** | **Observed AUC<sub>∞</sub> (µg•h/L)** | **Fold-error** | **Predicted Cmax (µg/L)** | **Observed Cmax (µg/mL)** | **Fold-error** |
 |--|--|--|--|--|--|--|
 | Pentikäinen, Välisalmi (43), control | 260.9 | 362 ± 61 | 0.72 | 70.69 | 90 ± 14 | 0.79 |
 | Pentikäinen, Välisalmi (43), HI population | Child-Pugh B: 880.49; C: 1289.16 | 576 ± 89 | B: 1.53; C: 2.24 | B: 76.96; C: 54.04 | 129 ± 24 | B: 0.59; C: 0.41 |
 
-Finally, an evaluation of predicted versus observed AUC<sub>8</sub> and Cmax from patients enrolled in Andersen, Pedersen (44) is presented in **Table 7**. 
+Finally, an evaluation of predicted versus observed AUC<sub>∞</sub> and Cmax from patients enrolled in Andersen, Pedersen (44) is presented in **Table 7**. 
 
-**Table 7. Evaluation of midazolam oral HI-PBPK model-predicted predicted vs observed AUC<sub>8</sub> and Cmax from Andersen, Pedersen (44)**
+**Table 7. Evaluation of midazolam oral HI-PBPK model-predicted predicted vs observed AUC<sub>∞</sub> and Cmax from Andersen, Pedersen (44)**
 
-| **Study** | **Predicted AUC<sub>8</sub> (µg•h/L)** | **Observed AUC<sub>8</sub> (µg•h/L)** | **Fold-error** | **Predicted Cmax (µg/L)** | **Observed Cmax (µg/mL)** | **Fold-error** |
+| **Study** | **Predicted AUC<sub>∞</sub> (µg•h/L)** | **Observed AUC<sub>∞</sub> (µg•h/L)** | **Fold-error** | **Predicted Cmax (µg/L)** | **Observed Cmax (µg/mL)** | **Fold-error** |
 |--|--|--|--|--|--|--|
 | Andersen, Pedersen (44), HI population | Child-Pugh A: 19507.72; B: 65209.07; C: 79644.66 | 24700 | A: 0.79; B: 2.64; C: 3.22 | A: 57.92; B: 97.06; C: 56.21 | 87 | A: 0.67; B: 1.12; C: 0.65 |
 
@@ -703,7 +703,7 @@ Finally, an evaluation of predicted versus observed AUC<sub>8</sub> and Cmax fro
 
 
 
-## 3.5 Sildenafil <a id="undefined-section-16"></a>
+## 3.5 Sildenafil<a id="undefined-section-16"></a>
 
 
 Sildenafil is a phosphodiesterase 5 (PDE5) inhibitor, approved for use in the treatment of erectile dysfunction and pulmonary hypertension. It exhibits its vasodilatory effects by promoting the accumulation of intracellular cGMP, resulting in the enhancement of nitric-oxide mediated vasodilation (54, 55).
@@ -728,7 +728,7 @@ The sildenafil healthy PBPK model was based on the development by the OSP Commun
 
 
 
-### 3.5.1 Sildenafil in a Healthy Population <a id="sildenafil_healthy"></a>
+### 3.5.1 Sildenafil in a Healthy Population<a id="sildenafil_healthy"></a>
 
 
 #### IV/PO model
@@ -767,7 +767,7 @@ The healthy PBPK model development was based on single dose IV and oral PK studi
 
 
 
-### 3.5.2 Sildenafil in a HI Population <a id="sildenafil_hi"></a>
+### 3.5.2 Sildenafil in a HI Population<a id="sildenafil_hi"></a>
 
 
 #### Oral model
@@ -782,11 +782,11 @@ A population with Child-Pugh A and B was created according to the patient demogr
 |--|--|--|--|--|--|
 | Muirhead, Wilner (59) | 50 mg oral single dose | American male patients with Child-Pugh scores A and B | A: 7; B: 5 | 32-63 | Not reported |
 
-Simulated PK of sildenafil administered as a 50 mg oral single dose in patients with Child-Pugh A and B are presented in **Figure 1** and **Figure 2**, respectively. An evaluation of predicted versus observed AUC<sub>8</sub> and Cmax from patients enrolled in Muirhad, Wilner (59) is presented in **Table 3**. 
+Simulated PK of sildenafil administered as a 50 mg oral single dose in patients with Child-Pugh A and B are presented in **Figure 1** and **Figure 2**, respectively. An evaluation of predicted versus observed AUC<sub>∞</sub> and Cmax from patients enrolled in Muirhad, Wilner (59) is presented in **Table 3**. 
 
-**Table 3. Evaluation of sildenafil oral HI-PBPK model-predicted vs observed AUC<sub>8</sub> and Cmax from Muirhead, Wilner (59)**
+**Table 3. Evaluation of sildenafil oral HI-PBPK model-predicted vs observed AUC<sub>∞</sub> and Cmax from Muirhead, Wilner (59)**
 
-| **Study** | **Predicted AUC<sub>8</sub> (ng•h/mL)** | **Observed AUC<sub>8</sub> (ng•h/mL)** | **Fold-error** | **Predicted Cmax (ng/mL)** | **Observed Cmax (ng/mL)** | **Fold-error** |
+| **Study** | **Predicted AUC<sub>∞</sub> (ng•h/mL)** | **Observed AUC<sub>∞</sub> (ng•h/mL)** | **Fold-error** | **Predicted Cmax (ng/mL)** | **Observed Cmax (ng/mL)** | **Fold-error** |
 |--|--|--|--|--|--|--|
 | Muirhead, Wilner (59), control | 708.73 | 664 ± 254 | 1.07 | 149.78 | 155 ± 56 | 0.97 |
 | Muirhead, Wilner (59), HI population | Child-Pugh A: 886.15; B: 2230.03 | 1225 ± 296 | A: 0.72; B: 1.82 | A: 135.5; B: 202.09 | 228 ± 131 | B: 0.6; C: 0.89 |
@@ -821,7 +821,7 @@ Simulated PK of sildenafil administered as a 50 mg oral single dose in patients 
 
 
 
-## 3.6 Theophylline <a id="undefined-section-19"></a>
+## 3.6 Theophylline<a id="undefined-section-19"></a>
 
 
 Theophylline is a methylxanthine that is administer either orally or intravenously for the management of asthma or chronic obstructive pulmonary disease (COPD) (60). Theophylline induces its bronchodilatory effects through antagonism and inhibition of the adenosine and phosphodiesterase pathways, respectively (61, 62).
@@ -846,7 +846,7 @@ The theophylline healthy PBPK model is reported in the OSP theophylline report (
 
 
 
-### 3.6.1 Theophylline in a Healthy Population <a id="theophylline_healthy"></a>
+### 3.6.1 Theophylline in a Healthy Population<a id="theophylline_healthy"></a>
 
 
 #### IV model
@@ -879,7 +879,7 @@ The healthy PBPK model development was based on single or multiple dose IV PK st
 
 
 
-### 3.6.2 Theophylline in a HI Population <a id="theophylline_hi"></a>
+### 3.6.2 Theophylline in a HI Population<a id="theophylline_hi"></a>
 
 
 #### IV model
@@ -929,7 +929,7 @@ Froomes, Morgan (67) observed versus simulated clearance and half-life of theoph
 
 
 
-## 3.7 Lidocaine <a id="undefined-section-22"></a>
+## 3.7 Lidocaine<a id="undefined-section-22"></a>
 
 
 Levetiracetam is an antiepileptic used for the treatment of patients with partial seizures, with or without secondary generalization (22, 23). The mechanism of antiseizure activity has not been fully elucidated, however, animal models have shown that levetiracetam binds to synaptic vesicle proteins SV2A modulating neurotransporter release (24).
@@ -954,7 +954,7 @@ The levetiracetam healthy PBPK model was based on the development by Sinha, Kara
 
 
 
-### 3.7.1 Lidocaine in a Healthy Population <a id="lidocaine_healthy"></a>
+### 3.7.1 Lidocaine in a Healthy Population<a id="lidocaine_healthy"></a>
 
 
 #### IV/PO model
@@ -988,7 +988,7 @@ T<sub>50%</sub>, T<sub>90%</sub>, T<sub>100%</sub>: Time to dissolve 50%, 90%, a
 
 
 
-### 3.7.2 Lidocaine in a HI Population <a id="lidocaine_hi"></a>
+### 3.7.2 Lidocaine in a HI Population<a id="lidocaine_hi"></a>
 
 
 #### Oral model
@@ -1035,7 +1035,7 @@ Simulated PK of levetiracetam administered as a 1000 mg oral single dose in pati
 
 
 
-# 4 References <a id="undefined-section-25"></a>
+# 4 References<a id="undefined-section-25"></a>
 
 
 1.	Edginton AN, Willmann S. Physiology-based simulations of a pathological condition: prediction of pharmacokinetics in patients with liver cirrhosis. Clin Pharmacokinet. 2008;47(11):743-52.
@@ -1068,7 +1068,7 @@ Simulated PK of levetiracetam administered as a 1000 mg oral single dose in pati
 28.	Coupez R, Nicolas JM, Browne TR. Levetiracetam, a new antiepileptic agent: lack of in vitro and in vivo pharmacokinetic interaction with valproic acid. Epilepsia. 2003;44(2):171-8.
 29.	Brockmöller J, Thomsen T, Wittstock M, Coupez R, Lochs H, Roots I. Pharmacokinetics of levetiracetam in patients with moderate to severe liver cirrhosis (Child-Pugh classes A, B, and C): characterization by dynamic liver function tests. Clin Pharmacol Ther. 2005;77(6):529-41.
 30.	Open Systems Pharmacology - PBPK Model Library - Metoprolol [Internet]. 2020 [cited October 24, 2022]. Available from: [https://github.com/Open-Systems-Pharmacology/Metoprolol-Model](https://github.com/Open-Systems-Pharmacology/Metoprolol-Model).
-31.	Rüdesheim S, Wojtyniak JG, Selzer D, Hanke N, Mahfoud F, Schwab M, et al. Physiologically Based Pharmacokinetic Modeling of Metoprolol Enantiomers and a-Hydroxymetoprolol to Describe CYP2D6 Drug-Gene Interactions. Pharmaceutics. 2020;12(12).
+31.	Rüdesheim S, Wojtyniak JG, Selzer D, Hanke N, Mahfoud F, Schwab M, et al. Physiologically Based Pharmacokinetic Modeling of Metoprolol Enantiomers and α-Hydroxymetoprolol to Describe CYP2D6 Drug-Gene Interactions. Pharmaceutics. 2020;12(12).
 32.	Kirchheiner J, Heesch C, Bauer S, Meisel C, Seringer A, Goldammer M, et al. Impact of the ultrarapid metabolizer genotype of cytochrome P450 2D6 on metoprolol pharmacokinetics and pharmacodynamics. Clin Pharmacol Ther. 2004;76(4):302-12.
 33.	Plosker GL, Clissold SP. Controlled release metoprolol formulations. A review of their pharmacodynamic and pharmacokinetic properties, and therapeutic use in hypertension and ischaemic heart disease. Drugs. 1992;43(3):382-414.
 34.	Jordö L, Attman PO, Aurell M, Johansson L, Johnsson G, Regårdh CG. Pharmacokinetic and pharmacodynamic properties of metoprolol in patients with impaired renal function. Clin Pharmacokinet. 1980;5(2):169-80.

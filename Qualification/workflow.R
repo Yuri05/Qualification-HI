@@ -95,23 +95,23 @@ createQualificationReport <- function(qualificationRunnerFolder,
     tic <- as.numeric(Sys.time())
   }
 
-  #' Start Qualification Runner to generate inputs for the reporting engine
-  startQualificationRunner(
-    qualificationRunnerFolder = qualificationRunnerFolder,
-    qualificationPlanFile = qualificationPlanFile,
-    outputFolder = reInputFolder,
-    pkSimPortableFolder = pkSimPortableFolder,
-    configurationPlanName = configurationPlanName,
-    overwrite = overwrite,
-    logFile = logFile,
-    logLevel = logLevel
-  )
-
-  #' Print timer tracked time if option `recordWorkflowTime` is set to TRUE
-  if (recordWorkflowTime) {
-    toc <- as.numeric(Sys.time())
-    print(paste0("Qualification Runn   er Duration: ", round((toc - tic) / 60, 1), " minutes"))
-  }
+  #' #' Start Qualification Runner to generate inputs for the reporting engine
+  #' startQualificationRunner(
+  #'   qualificationRunnerFolder = qualificationRunnerFolder,
+  #'   qualificationPlanFile = qualificationPlanFile,
+  #'   outputFolder = reInputFolder,
+  #'   pkSimPortableFolder = pkSimPortableFolder,
+  #'   configurationPlanName = configurationPlanName,
+  #'   overwrite = overwrite,
+  #'   logFile = logFile,
+  #'   logLevel = logLevel
+  #' )
+  #' 
+  #' #' Print timer tracked time if option `recordWorkflowTime` is set to TRUE
+  #' if (recordWorkflowTime) {
+  #'   toc <- as.numeric(Sys.time())
+  #'   print(paste0("Qualification Runn   er Duration: ", round((toc - tic) / 60, 1), " minutes"))
+  #' }
 
   #-------- STEP 3: Run Qualification Workflow  --------#
   # If version info is provided update title page
